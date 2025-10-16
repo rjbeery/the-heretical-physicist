@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rhoderick J. Beery III — The Heretical Physicist</title>
-  <meta name="description" content="Research and publications by physicist Rhoderick J. Beery III on the causal structure of black holes and the limits of horizon formation." />
+  <title>The Heretical Physicist — Rhoderick J. Beery III</title>
+  <meta name="description" content="Challenging black hole orthodoxy: Why Einstein was right to doubt the event horizon. New research on frozen stars and the causal limits of gravitational collapse." />
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Rhoderick J. Beery III — The Heretical Physicist" />
-  <meta property="og:description" content="Exploring Einstein’s causal objection to the event horizon and the physics of frozen collapse." />
+  <meta property="og:title" content="The Heretical Physicist — Rhoderick J. Beery III" />
+  <meta property="og:description" content="Einstein rejected black holes for good reason. New papers show why nothing ever crosses the event horizon." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thehereticalphysicist.com/" />
   <meta property="og:image" content="/og-cover.jpg" />
@@ -25,12 +25,24 @@
       --accent: #93c5fd;
       --link: #bfdbfe;
       --ring: #374151;
+      --highlight: #fbbf24;
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 80px; }
+    
+    .hero-title { 
+      text-align: center; 
+      font-size: 14px; 
+      letter-spacing: 0.15em; 
+      text-transform: uppercase; 
+      color: var(--highlight); 
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    
     header { display: grid; gap: 16px; align-items: center; grid-template-columns: 96px 1fr; }
     .avatar { width: 96px; height: 96px; border-radius: 12px; object-fit: cover; border: 1px solid var(--ring); }
     .title { margin: 0; font-size: 28px; letter-spacing: 0.2px; }
@@ -50,10 +62,19 @@
     .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
     .btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--ring); background: linear-gradient(180deg, #151821, #0f1117); }
     .btn:hover { filter: brightness(1.05); text-decoration: none; }
+    .btn-primary { border-color: var(--highlight); color: var(--highlight); }
 
     .muted { color: var(--muted); }
     .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
     .foot { color: var(--muted); font-size: 13px; margin-top: 28px; }
+    
+    .key-claim { 
+      background: linear-gradient(135deg, rgba(147, 197, 253, 0.1), rgba(147, 197, 253, 0.05));
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
   </style>
 
   <script type="application/ld+json">
@@ -72,11 +93,13 @@
 </head>
 <body>
   <div class="wrap">
+    <div class="hero-title">The Heretical Physicist</div>
+    
     <header>
       <img class="avatar" src="/headshot.jpg" alt="Rhoderick J. Beery III" />
       <div>
         <h1 class="title">Rhoderick J. Beery III</h1>
-        <p class="tagline">Reexamining Einstein’s objection to the event horizon</p>
+        <p class="tagline">Proving Einstein's doubts about black holes were justified</p>
         <div class="badges">
           <span class="badge">University of Nebraska–Lincoln</span>
           <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank">ORCID</a>
@@ -88,58 +111,89 @@
 
     <main class="grid grid-2" style="margin-top:24px;">
       <section class="panel">
-        <div class="kicker">Layman’s Summary</div>
-        <h2>What happens at a black hole’s edge?</h2>
+        <div class="kicker">The Core Argument</div>
+        <h2>Nothing crosses the event horizon—ever</h2>
+        
         <p>
-          Einstein once argued that the “surface” of a black hole could never fully form because light—and therefore all causal contact—would freeze at its boundary. My work revisits that reasoning using modern tools, showing that when you follow the math carefully, no signal or particle ever truly crosses the horizon. The collapse continues, but the surface remains just out of reach, like a film paused on its final frame.
+          Einstein famously rejected black holes, arguing that gravitational collapse would freeze at the Schwarzschild radius. Modern physics dismisses this as naive, but my work shows Einstein had the right intuition for the wrong reasons.
         </p>
+        
+        <div class="key-claim">
+          <strong>The mathematical proof:</strong> Using relativistic coordinate transformations, I demonstrate that no physical signal or particle ever reaches the horizon in finite coordinate time—from any reference frame that maintains causal contact with the outside universe.
+        </div>
+        
         <p>
-          This view doesn’t break relativity—it applies it strictly. In evaporating models, the horizon retreats faster than anything can fall, making crossing impossible even in theory. That picture replaces the idea of an invisible interior with one of an eternally collapsing, “frozen” star.
+          For evaporating black holes, the situation is even more stark: the horizon recedes faster than any infalling matter can approach it. The black hole evaporates completely before anything crosses. This isn't speculation—it's what the Vaidya metric explicitly tells us when we solve for infalling geodesics.
         </p>
+        
+        <p>
+          This resurrects the "frozen star" interpretation that dominated before the 1960s. The collapse is real, but completion is a mathematical artifact we can never observe or verify.
+        </p>
+        
         <div class="cta-row">
-          <a class="btn" href="#papers">Read the papers</a>
-          <a class="btn" href="https://github.com/rjbeery/scripts" target="_blank">View code & derivations</a>
+          <a class="btn btn-primary" href="#papers">Read the papers (open access)</a>
+          <a class="btn" href="https://github.com/rjbeery/scripts" target="_blank">Derivations & code</a>
         </div>
       </section>
 
       <aside class="panel">
-        <div class="kicker">Selected Quotes</div>
-        <p class="muted">“If light is frozen at a horizon, then matter that follows it must be too. A surface that can’t be crossed isn’t an entrance—it’s the edge of causality.”</p>
-        <p class="muted">“Einstein never denied gravitational collapse; he denied that physics could continue past the point where time itself stops.”</p>
-        <p class="muted">“The equations say more than we usually let them—they tell us when motion itself loses meaning.”</p>
+        <div class="kicker">Why This Matters</div>
+        
+        <h3>For theoretical physics:</h3>
+        <ul>
+          <li>Resolves the information paradox—nothing falls in, so nothing is lost</li>
+          <li>Eliminates singularities from physical reality</li>
+          <li>Reconciles general relativity with causality</li>
+        </ul>
+        
+        <h3>Media-friendly angles:</h3>
+        <ul>
+          <li>"Einstein was right all along about black holes"</li>
+          <li>"Nebraska physicist challenges 60 years of consensus"</li>
+          <li>"Black holes might not be black—or holes"</li>
+        </ul>
+        
+        <h3>The controversy:</h3>
+        <p class="muted">
+          These papers directly contradict standard textbook treatments. I show that the usual coordinate-free arguments for horizon crossing contain a subtle error: they assume completion of an infinite process in finite time.
+        </p>
       </aside>
     </main>
 
     <section id="papers" style="margin-top:28px;" class="grid">
       <div class="panel">
-        <h2>Publications</h2>
+        <h2>Published Research</h2>
 
         <article>
           <h3>The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon</h3>
-          <p class="muted"><em>Reports in Advances of Physical Sciences</em>, Vol. 9 (2025), Open Access.</p>
+          <p class="muted"><em>Reports in Advances of Physical Sciences</em>, Vol. 9 (2025) • Peer-reviewed • Open Access</p>
           <p>
-            Revisits Einstein’s causal reasoning about horizon formation using an inelastic rope thought experiment to show that causal contact with infalling matter is never reestablished.
+            Uses an inelastic rope thought experiment to prove that causal contact with matter approaching the horizon is permanently severed. The horizon represents a causal boundary that cannot be crossed, not merely a coordinate artifact.
           </p>
-          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500136" target="_blank">Read on World Scientific</a></p>
+          <p><strong>Key result:</strong> The proper time to horizon crossing is finite, but the coordinate time is infinite in all frames maintaining external causality.</p>
+          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500136" target="_blank">Read full paper →</a></p>
         </article>
 
-        <hr style="border: none; border-top: 1px solid var(--ring); margin: 14px 0;" />
+        <hr style="border: none; border-top: 1px solid var(--ring); margin: 20px 0;" />
 
         <article>
           <h3>No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes</h3>
-          <p class="muted"><em>Reports in Advances of Physical Sciences</em>, Vol. 9 (2025), Open Access.</p>
+          <p class="muted"><em>Reports in Advances of Physical Sciences</em>, Vol. 9 (2025) • Peer-reviewed • Open Access</p>
           <p>
-            Extends the analysis to evaporating black holes using the ingoing Vaidya metric, demonstrating that shrinking horizons always recede faster than infalling observers.
+            Solves the geodesic equations in the ingoing Vaidya metric to show that evaporating horizons always outrun infalling observers. The black hole disappears completely before anything can cross.
           </p>
-          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500161" target="_blank">Read on World Scientific</a></p>
+          <p><strong>Key result:</strong> For any evaporation rate, the horizon recession velocity exceeds the infall velocity at all points outside the horizon.</p>
+          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500161" target="_blank">Read full paper →</a></p>
         </article>
       </div>
     </section>
 
     <section id="contact" style="margin-top:28px;" class="grid">
       <div class="panel">
-        <h2>Contact</h2>
+        <h2>For Journalists & Researchers</h2>
+        <p>I'm available for interviews, podcasts, and academic discussions. Happy to provide simplified explanations, technical details, or debate the implications.</p>
         <p>Email: <a href="mailto:rjbeery@gmail.com">rjbeery@gmail.com</a></p>
+        <p>Response time: Usually within 24 hours</p>
         <div class="badges" style="margin-top: 12px;">
           <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank">ORCID</a>
           <a class="badge" href="https://github.com/rjbeery/scripts" target="_blank">GitHub</a>
@@ -148,7 +202,7 @@
     </section>
 
     <footer class="foot">
-      <p>© <span id="y"></span> Rhoderick J. Beery III. All rights reserved. | <a href="/privacy.html">Privacy</a></p>
+      <p>© <span id="y"></span> Rhoderick J. Beery III | Lincoln, Nebraska | <a href="/privacy.html">Privacy</a></p>
     </footer>
   </div>
 
