@@ -17,10 +17,6 @@
   <link rel="icon" href="/Glowing Atomic Symbol on Dark Blue.png" type="image/png" />
 
   <style>
-    .hero{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-  .hero .headshot{width:200px;height:auto;border-radius:12px;flex:0 0 auto;display:block}
-  .hero .hero-text{flex:1 1 420px;min-width:260px}
-  @media (max-width:640px){.hero{align-items:flex-start}.hero .headshot{width:160px}}
     :root {
       --bg: #0b0c10;
       --panel: #111217;
@@ -36,8 +32,8 @@
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 80px; }
-    
-    .hero-title { 
+
+    .site-kicker { 
       text-align: center; 
       font-size: 14px; 
       letter-spacing: 0.15em; 
@@ -46,9 +42,13 @@
       margin-bottom: 24px;
       font-weight: 600;
     }
-    
-    header { display: grid; gap: 16px; align-items: center; grid-template-columns: 96px 1fr; }
-    .avatar { width: 96px; height: 96px; border-radius: 12px; object-fit: cover; border: 1px solid var(--ring); }
+
+    /* Author header (replaces previous 'hero') */
+    .author { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+    .author .headshot { width:200px; height:auto; border-radius:12px; display:block; flex:0 0 auto; border:1px solid var(--ring); }
+    .author .author-text { flex:1 1 420px; min-width:260px; }
+    @media (max-width:640px){ .author{ align-items:flex-start } .author .headshot{ width:160px } }
+
     .title { margin: 0; font-size: 28px; letter-spacing: 0.2px; }
     .tagline { margin: 2px 0 0; color: var(--muted); font-size: 16px; }
     .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
@@ -71,7 +71,7 @@
     .muted { color: var(--muted); }
     .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
     .foot { color: var(--muted); font-size: 13px; margin-top: 28px; }
-    
+
     .key-claim { 
       background: linear-gradient(135deg, rgba(147, 197, 253, 0.1), rgba(147, 197, 253, 0.05));
       border-left: 3px solid var(--accent);
@@ -86,7 +86,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Rhoderick J. Beery III",
-    "jobTitle": "Physicist",
+    "jobTitle": "Student researcher",
     "url": "https://thehereticalphysicist.com/",
     "sameAs": [
       "https://orcid.org/0000-0003-0182-5672",
@@ -97,18 +97,19 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="hero-title">The Heretical Physicist</div>
-    
-    <header>
-     <img src="headshot.jpg" alt="Rhoderick J. Beery III"
-       class="headshot" loading="lazy" />
-  <div class="hero-text">
-    <h1>Rhoderick J. Beery III</h1>
-    <p>Proving Einstein's doubts about black holes were justified</p>
+    <div class="site-kicker">The Heretical Physicist</div>
+
+    <!-- Author header -->
+    <header class="author">
+      <!-- If your file lives at /headshot.jpg, keep src="headshot.jpg". If in /images/, change to images/headshot.jpg -->
+      <img src="headshot.jpg" alt="Rhoderick J. Beery III" class="headshot" loading="lazy" />
+      <div class="author-text">
+        <h1 class="title">Rhoderick J. Beery III</h1>
+        <p class="tagline">Proving Einstein's doubts about black holes were justified</p>
         <div class="badges">
           <span class="badge">University of Nebraska–Lincoln</span>
-          <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank">ORCID</a>
-          <a class="badge" href="https://github.com/rjbeery/scripts" target="_blank">GitHub</a>
+          <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank" rel="noopener">ORCID</a>
+          <a class="badge" href="https://github.com/rjbeery/scripts" target="_blank" rel="noopener">GitHub</a>
           <a class="badge" href="#contact">Contact</a>
         </div>
       </div>
@@ -118,46 +119,46 @@
       <section class="panel">
         <div class="kicker">The Core Argument</div>
         <h2>Nothing crosses the event horizon—ever</h2>
-        
+
         <p>
           Einstein famously rejected black holes, arguing that gravitational collapse would freeze at the Schwarzschild radius. Modern physics dismisses this as naive, but my work shows Einstein had the right intuition for the wrong reasons.
         </p>
-        
+
         <div class="key-claim">
           <strong>The mathematical proof:</strong> Using relativistic coordinate transformations, I demonstrate that no physical signal or particle ever reaches the horizon in finite coordinate time—from any reference frame that maintains causal contact with the outside universe.
         </div>
-        
+
         <p>
           For evaporating black holes, the situation is even more stark: the horizon recedes faster than any infalling matter can approach it. The black hole evaporates completely before anything crosses. This isn't speculation—it's what the Vaidya metric explicitly tells us when we solve for infalling geodesics.
         </p>
-        
+
         <p>
           This resurrects the "frozen star" interpretation that dominated before the 1960s. The collapse is real, but completion is a mathematical artifact we can never observe or verify.
         </p>
-        
+
         <div class="cta-row">
           <a class="btn btn-primary" href="#papers">Read the papers (open access)</a>
-          <a class="btn" href="https://github.com/rjbeery/scripts" target="_blank">Derivations & code</a>
+          <a class="btn" href="https://github.com/rjbeery/scripts" target="_blank" rel="noopener">Derivations & code</a>
         </div>
       </section>
 
       <aside class="panel">
         <div class="kicker">Why This Matters</div>
-        
+
         <h3>For theoretical physics:</h3>
         <ul>
           <li>Resolves the information paradox—nothing falls in, so nothing is lost</li>
           <li>Eliminates singularities from physical reality</li>
           <li>Reconciles general relativity with causality</li>
         </ul>
-        
+
         <h3>Media-friendly angles:</h3>
         <ul>
           <li>"Einstein was right all along about black holes"</li>
           <li>"Nebraska physicist challenges 60 years of consensus"</li>
           <li>"Black holes might not be black—or holes"</li>
         </ul>
-        
+
         <h3>The controversy:</h3>
         <p class="muted">
           These papers directly contradict standard textbook treatments. I show that the usual coordinate-free arguments for horizon crossing contain a subtle error: they assume completion of an infinite process in finite time.
@@ -176,7 +177,7 @@
             Uses an inelastic rope thought experiment to prove that causal contact with matter approaching the horizon is permanently severed. The horizon represents a causal boundary that cannot be crossed, not merely a coordinate artifact.
           </p>
           <p><strong>Key result:</strong> The proper time to horizon crossing is finite, but the coordinate time is infinite in all frames maintaining external causality.</p>
-          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500136" target="_blank">Read full paper →</a></p>
+          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500136" target="_blank" rel="noopener">Read full paper →</a></p>
         </article>
 
         <hr style="border: none; border-top: 1px solid var(--ring); margin: 20px 0;" />
@@ -188,7 +189,7 @@
             Solves the geodesic equations in the ingoing Vaidya metric to show that evaporating horizons always outrun infalling observers. The black hole disappears completely before anything can cross.
           </p>
           <p><strong>Key result:</strong> For any evaporation rate, the horizon recession velocity exceeds the infall velocity at all points outside the horizon.</p>
-          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500161" target="_blank">Read full paper →</a></p>
+          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500161" target="_blank" rel="noopener">Read full paper →</a></p>
         </article>
       </div>
     </section>
@@ -200,8 +201,8 @@
         <p>Email: <a href="mailto:rjbeery@gmail.com">rjbeery@gmail.com</a></p>
         <p>Response time: Usually within 24 hours</p>
         <div class="badges" style="margin-top: 12px;">
-          <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank">ORCID</a>
-          <a class="badge" href="https://github.com/rjbeery/scripts" target="_blank">GitHub</a>
+          <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank" rel="noopener">ORCID</a>
+          <a class="badge" href="https://github.com/rjbeery/scripts" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </section>
