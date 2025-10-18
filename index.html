@@ -17,6 +17,10 @@
   <link rel="icon" href="/Glowing Atomic Symbol on Dark Blue.png" type="image/png" />
 
   <style>
+    .hero{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+  .hero img.headshot{width:200px;height:auto;border-radius:12px;flex:0 0 auto}
+  .hero-text{flex:1 1 420px;min-width:260px}
+  @media (max-width:640px){.hero{align-items:flex-start}.hero img.headshot{width:160px}}
     :root {
       --bg: #0b0c10;
       --panel: #111217;
@@ -96,15 +100,11 @@
     <div class="hero-title">The Heretical Physicist</div>
     
     <header>
-     <img 
-  src="headshot.jpg" 
-  alt="Rhoderick J. Beery III" 
-  width="200" 
-  style="border-radius:12px; display:block; margin:auto; height:auto;" 
-/>
-      <div>
-        <h1 class="title">Rhoderick J. Beery III</h1>
-        <p class="tagline">Proving Einstein's doubts about black holes were justified</p>
+     <img src="headshot.jpg" alt="Rhoderick J. Beery III"
+       class="headshot" loading="lazy" />
+  <div class="hero-text">
+    <h1>Rhoderick J. Beery III</h1>
+    <p>Proving Einstein's doubts about black holes were justified</p>
         <div class="badges">
           <span class="badge">University of Nebraska–Lincoln</span>
           <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank">ORCID</a>
