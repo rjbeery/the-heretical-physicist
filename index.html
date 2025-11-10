@@ -45,6 +45,10 @@
     .toggle{cursor:pointer}
     details{margin-top:8px}
     details > summary{cursor:pointer;color:var(--accent)}
+    .erratum{margin-top:10px;padding:10px;border:1px solid #d97706;background:#78350f33;border-radius:8px}
+    .erratum strong{color:#fbbf24;display:block;margin-bottom:6px}
+    .erratum p{margin:6px 0}
+    .erratum .btn{margin-top:6px}
     pre{white-space:pre-wrap;background:#0e1116;border:1px solid var(--ring);padding:10px;border-radius:8px;overflow:auto}
     footer{color:var(--muted);font-size:13px;margin-top:28px}
   </style>
@@ -93,58 +97,64 @@
       title: "The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon",
       venue: "Reports in Advances of Physical Sciences",
       year: 2025,
-      status: "Published (peer‑reviewed)",
+      status: "Published in Reports in Advances of Physical Sciences",
       doi: "https://www.worldscientific.com/doi/10.1142/S2424942425500136",
       pdf: "/papers/heretical-physicist.pdf", // optional local copy
       code: "https://github.com/rjbeery/scripts",
-      abstract: "Uses an inelastic‑rope thought experiment in Schwarzschild spacetime to argue that causal contact with matter approaching the horizon is permanently severed from the exterior. The horizon functions as a null causal boundary rather than a permeable one‑way surface.",
-      lay: "If you lower a rope toward a black hole, there is no sequence of real operations that lets the rope’s end reach the horizon while the top stays in contact with you. The ‘finish line’ keeps receding in terms of outside time, so nothing actually crosses.",
+      abstract: "This paper revisits Einstein's objection to the event horizon by demonstrating that causal contact with infalling matter is permanently severed from the exterior observer's perspective. Using an inelastic rope thought experiment in Schwarzschild spacetime, we show that no sequence of real operations allows the rope to reach the horizon while maintaining contact with the exterior. The horizon functions as a zero-way causal boundary rather than a permeable one-way surface, supporting Einstein's skepticism about horizon formation.",
+      lay: "If you lower a rope toward a black hole, there is no sequence of real operations that lets the rope's end reach the horizon while the top stays in contact with you. The 'finish line' keeps receding in terms of outside time, so nothing actually crosses.",
+      erratum: {
+        pdf: "/papers/errata/Errata for The Heretical Physicist.pdf"
+      },
       bibtex: `@article{Beery2025Heresy,\n  author={Beery, Rhoderick J.},\n  title={The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon},\n  journal={Reports in Advances of Physical Sciences},\n  year={2025},\n  doi={10.1142/S2424942425500136}\n}`
     },
     {
       title: "No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes",
       venue: "Reports in Advances of Physical Sciences",
       year: 2025,
-      status: "Published (peer‑reviewed)",
+      status: "Published in Reports in Advances of Physical Sciences",
       doi: "https://www.worldscientific.com/doi/10.1142/S2424942425500161",
       pdf: "/papers/no-passing-zone-redux.pdf",
       code: "https://github.com/rjbeery/scripts",
-      abstract: "Solves infalling trajectories in the ingoing Vaidya metric and shows that for evaporating black holes the horizon recedes faster than any infalling worldline can approach; the object never reaches the horizon before evaporation completes.",
-      lay: "When a black hole is shrinking, its boundary moves away faster than anything can catch it. By the time you’d ‘arrive,’ the hole is gone.",
+      abstract: "This analysis extends our previous work on horizon formation by examining evaporating black holes using the ingoing Vaidya metric. By analyzing geodesic evolution and tracking ε(τ) = r(τ) − 2M(v(τ)) for infalling particles, we show that the shrinking horizon generically outruns all timelike infall. For a Hawking-like evaporation profile, we derive the geodesic equations and demonstrate that dε/dτ > 0 throughout the evaporation process. This result suggests that event horizon formation is dynamically precluded under semi-classical evaporation.",
+      lay: "When a black hole is shrinking, its boundary moves away faster than anything can catch it. By the time you'd 'arrive,' the hole is gone.",
+      erratum: {
+        pdf: "/papers/errata/Erratum for No Passing Zone (redux).pdf"
+      },
       bibtex: `@article{Beery2025NoPassing,\n  author={Beery, Rhoderick J.},\n  title={No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes},\n  journal={Reports in Advances of Physical Sciences},\n  year={2025},\n  doi={10.1142/S2424942425500161}\n}`
     },
     {
-      title: "True Weight of Light: Exact derivation of mass from confined electromagnetic energy",
+      title: "True Weight of Light: Exact Derivation of Mass From Confined Electromagnetic Energy",
       venue: "Physical Review D (submitted)",
       year: 2025,
-      status: "Under editorial consideration",
+      status: "Under review at Physical Review D",
       doi: "", // add when available
       pdf: "/papers/true-weight-of-light.pdf",
-      abstract: "Derives rest‑mass equivalence for a bound electromagnetic configuration from time‑dilation/energy arguments, framing gravitational mass as an emergent property of confined field energy.",
+      abstract: "We demonstrate that gravitational mass emerges as the reactive force experienced by confined electromagnetic energy in a gravitational potential. Analyzing a single photon confined between two perfect mirrors at fixed Schwarzschild radii, we derive the exact asymmetric momentum transfer arising from gravitational redshift. Without invoking weak-field approximations, we show that a standing wave with total energy E experiences, as measured by a stationary observer, a net downward force exactly equal to (E/c²)gₑff, where gₑff depends on the local spacetime geometry. For a photon with Killing energy ℏωₖ = mₑc² confined at the Compton scale, the system exhibits gravitational behavior identical to an electron at rest. We further demonstrate that inertial mass emerges identically from Doppler-shifted momentum transfer during acceleration in flat spacetime, establishing that both gravitational and inertial mass arise from the same geometric principle and explaining the equivalence principle as an inevitable consequence rather than an empirical mystery. This result suggests that gravitational mass is not a fundamental property but an emergent consequence of energy confinement in curved spacetime, with implications for the interpretation of the equivalence principle and the nature of mass itself.",
       lay: "A box of light behaves like it has weight. Treat the energy as confined and you can compute an exact, not hand‑wavy, mass.",
-      bibtex: `@unpublished{Beery2025TWL,\n  author={Beery, Rhoderick J.},\n  title={True Weight of Light: Exact derivation of mass from confined electromagnetic energy},\n  note={Submitted to Physical Review D},\n  year={2025}\n}`
+      bibtex: `@unpublished{Beery2025TWL,\n  author={Beery, Rhoderick J.},\n  title={True Weight of Light: Exact Derivation of Mass From Confined Electromagnetic Energy},\n  note={Submitted to Physical Review D},\n  year={2025}\n}`
     },
     {
-      title: "Mercury’s Mirror: The 6\u03c0 proof of time‑symmetric gravity",
+      title: "Mercury's Mirror: Time-Symmetric Flat-Spacetime Derivations of 1PN Perihelion Precession and Light Deflection",
       venue: "Preprint",
       year: 2025,
-      status: "Preprint",
+      status: "Under review at Foundations of Physics",
       doi: "", // Zenodo/DOI when assigned
       pdf: "/papers/mercurys-mirror.pdf",
-      abstract: "Reproduces Mercury’s 43″/century perihelion advance using a flat‑spacetime, time‑symmetric (retarded+advanced) interaction model, attributing the 6\u03c0 factor to null‑contact geometry and radial–tangential coupling.",
+      abstract: "We give explicit, time-symmetric, flat-spacetime derivations of two classic weak-field tests: Mercury's perihelion advance and the Sun's light deflection. Starting from a Fokker-type direct-interaction action with a retarded+advanced null kernel, a near-zone expansion to O(v²/c²) yields a gravitational Darwin-type Lagrangian. In the M ≫ m limit the resulting Euler–Lagrange equations reduce to a Binet equation with the decisive coefficient 3, giving Δϖ = 6πGM/[a(1−e²)c²]. For light, we compute the transverse momentum impulse at the two null-connected endpoints (emitter and absorber). Each endpoint contributes δθ_endpoint = 2GM/(bc²); the total deflection is δ = 4GM/(bc²). All intermediate steps are shown: light-cone delta resolution, Jacobians, cancellation of O(v/c) terms, construction of the quadratic velocity functional Q, the Binet reduction, and the endpoint impulse integral for light. Historically, Hoyle–Narlikar (1964) argued that a time-symmetric direct-interaction theory should reproduce GR's weak-field phenomenology but did not publish explicit action→observable derivations for Mercury or light bending. This paper supplies those calculations, motivated by renewed interest in direct-interaction approaches and by the author's Einstein's Big Toe (EBT) program.",
       lay: "You can explain Mercury’s extra orbit twist without curving spacetime by carefully accounting for how gravity communicates at light speed.",
-      bibtex: `@misc{Beery2025MM,\n  author={Beery, Rhoderick J.},\n  title={Mercury's Mirror: The 6pi proof of time-symmetric gravity},\n  howpublished={Preprint},\n  year={2025}\n}`
+      bibtex: `@misc{Beery2025MM,\n  author={Beery, Rhoderick J.},\n  title={Mercury's Mirror: Time-Symmetric Flat-Spacetime Derivations of 1PN Perihelion Precession and Light Deflection},\n  howpublished={Preprint},\n  year={2025}\n}`
     },
     {
-      title: "No Dice, Niels: Deterministic quantum statistics from null‑shell causality",
+      title: "No Dice, Niels: Deterministic Quantum Statistics From Null‑Shell Causality",
       venue: "Target: Foundations of Physics (in prep)",
       year: 2025,
-      status: "Manuscript in preparation",
+      status: "Under review at Foundations of Physics",
       doi: "",
       pdf: "/papers/no-dice-niels.pdf",
-      abstract: "Proposes a deterministic account of Born‑rule statistics and Bell correlations via phase‑matched null‑shell contact between emitters and absorbers, avoiding nonlocality while preserving empirical predictions.",
+      abstract: "\"God does not play dice,\" Einstein objected to quantum indeterminacy. This paper examines how quantum probability may emerge from deterministic, time-symmetric causal processes. Within the null-shell causality framework of Einstein's Big Toe, the Born rule is shown to follow geometrically once amplitude squaring is assumed: two-boundary null-contact structure fixes the cos² detection law with no adjustable parameters. Introducing a natural symmetry threshold at T_crit = 0.5 converts the continuous coupling into discrete yes/no outcomes, providing a fully deterministic version of the theory. Bell correlations arise from boundary-conditioned phase selection where both retarded (past) and advanced (future) null contacts participate. The model is retrocausal in a kinematic sense—future settings constrain which past emissions complete—but it preserves locality and no-signaling. Apparent randomness reflects epistemic ignorance of absorber boundary conditions rather than ontological chance.",
       lay: "Quantum ‘randomness’ may come from how sources and detectors lock phases along light‑like connections, not from dice‑throwing by nature.",
-      bibtex: `@unpublished{Beery2025NDN,\n  author={Beery, Rhoderick J.},\n  title={No Dice, Niels: Deterministic quantum statistics from null-shell causality},\n  note={In preparation},\n  year={2025}\n}`
+      bibtex: `@unpublished{Beery2025NDN,\n  author={Beery, Rhoderick J.},\n  title={No Dice, Niels: Deterministic Quantum Statistics From Null-Shell Causality},\n  note={In preparation},\n  year={2025}\n}`
     }
   ];
 
@@ -178,6 +188,11 @@
           <button class="btn" onclick="copyBib(this)" aria-label="Copy BibTeX">Copy BibTeX</button>
         </div>
         ${p.abstract ? `<details><summary>Abstract</summary><p itemprop="abstract">${p.abstract}</p></details>`:''}
+        ${p.erratum ? `<div class="erratum" role="alert">
+          <strong>⚠ Erratum</strong> ${p.erratum.date ? `(${p.erratum.date})` : ''}
+          ${p.erratum.text ? `<p>${p.erratum.text}</p>` : ''}
+          ${p.erratum.pdf ? `<a href="${p.erratum.pdf}" class="btn" download>Download Erratum PDF</a>` : ''}
+        </div>`:''}
         ${p.lay ? `<details><summary>Lay summary</summary><p>${p.lay}</p></details>`:''}
         ${p.bibtex ? `<pre class="bib" hidden>${p.bibtex}</pre>`:''}
       </article>
