@@ -45,10 +45,6 @@
     .toggle{cursor:pointer}
     details{margin-top:8px}
     details > summary{cursor:pointer;color:var(--accent)}
-    .erratum{margin-top:10px;padding:10px;border:1px solid #d97706;background:#78350f33;border-radius:8px}
-    .erratum strong{color:#fbbf24;display:block;margin-bottom:6px}
-    .erratum p{margin:6px 0}
-    .erratum .btn{margin-top:6px}
     pre{white-space:pre-wrap;background:#0e1116;border:1px solid var(--ring);padding:10px;border-radius:8px;overflow:auto}
     footer{color:var(--muted);font-size:13px;margin-top:28px}
   </style>
@@ -178,21 +174,16 @@
       <article class="item" itemscope itemtype="https://schema.org/ScholarlyArticle">
         <h3 itemprop="headline">${p.title}</h3>
         <div class="meta">
-          <span itemprop="isPartOf">${p.venue}</span> • <span itemprop="datePublished">${p.year}</span>
-          ${p.status ? `• <span>${p.status}</span>`:''}
+          ${p.status ? `Status: ${p.status}`:''}
         </div>
         <div class="btns">
           ${p.pdf ? `<a class="btn primary" href="${p.pdf}" itemprop="encoding" download>Download PDF</a>`:''}
+          ${p.erratum?.pdf ? `<a class="btn" href="${p.erratum.pdf}" download>Download Erratum PDF</a>` : ''}
           ${p.doi ? `<a class="btn" href="${p.doi}" target="_blank" rel="noopener" itemprop="sameAs">DOI / Journal</a>`:''}
           ${p.code ? `<a class="btn" href="${p.code}" target="_blank" rel="noopener">Code/Derivations</a>`:''}
           <button class="btn" onclick="copyBib(this)" aria-label="Copy BibTeX">Copy BibTeX</button>
         </div>
         ${p.abstract ? `<details><summary>Abstract</summary><p itemprop="abstract">${p.abstract}</p></details>`:''}
-        ${p.erratum ? `<div class="erratum" role="alert">
-          <strong>⚠ Erratum</strong> ${p.erratum.date ? `(${p.erratum.date})` : ''}
-          ${p.erratum.text ? `<p>${p.erratum.text}</p>` : ''}
-          ${p.erratum.pdf ? `<a href="${p.erratum.pdf}" class="btn" download>Download Erratum PDF</a>` : ''}
-        </div>`:''}
         ${p.lay ? `<details><summary>Lay summary</summary><p>${p.lay}</p></details>`:''}
         ${p.bibtex ? `<pre class="bib" hidden>${p.bibtex}</pre>`:''}
       </article>
