@@ -1,114 +1,62 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="canonical" href="https://thehereticalphysicist.com/" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Heretical Physicist — Rhoderick J. Beery III</title>
-  <meta name="description" content="Challenging black hole orthodoxy: Why Einstein was right to doubt the event horizon. New research on frozen stars and the causal limits of gravitational collapse." />
+  <title>Rhoderick J. Beery III — Papers</title>
+  <link rel="canonical" href="https://thehereticalphysicist.com/" />
+  <meta name="description" content="Publications and preprints by Rhoderick J. Beery III. Links to PDFs, DOIs, abstracts, and plain‑language summaries." />
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="The Heretical Physicist — Rhoderick J. Beery III" />
-  <meta property="og:description" content="Einstein rejected black holes for good reason. New papers show why nothing ever crosses the event horizon." />
+  <meta property="og:title" content="Rhoderick J. Beery III — Papers" />
+  <meta property="og:description" content="Publications and preprints with PDFs, abstracts, and lay summaries." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thehereticalphysicist.com/" />
   <meta property="og:image" content="/Glowing Atomic Symbol on Dark Blue.png" />
   <meta name="twitter:card" content="summary_large_image" />
-
   <link rel="icon" href="/Glowing Atomic Symbol on Dark Blue.png" type="image/png" />
 
   <style>
-    :root {
-      --bg: #0b0c10;
-      --panel: #111217;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #93c5fd;
-      --link: #bfdbfe;
-      --ring: #374151;
-      --highlight: #fbbf24;
+    :root{
+      --bg:#0b0c10;--panel:#111217;--text:#e5e7eb;--muted:#9ca3af;--accent:#93c5fd;--link:#bfdbfe;--ring:#333843;--hi:#fbbf24
     }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 80px; }
-
-    .site-kicker { 
-      text-align: center; 
-      font-size: 28px; 
-      letter-spacing: 0.15em; 
-      text-transform: uppercase; 
-      color: var(--highlight); 
-      margin-bottom: 24px;
-      font-weight: 600;
-    }
-
-    /* Author header */
-    .author { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
-    .author .headshot { width:200px; height:auto; border-radius:12px; display:block; flex:0 0 auto; border:1px solid var(--ring); }
-    .author .author-text { flex:1 1 420px; min-width:260px; }
-    @media (max-width:640px){ .author{ align-items:flex-start } .author .headshot{ width:160px } }
-
-    .title { margin: 0; font-size: 28px; letter-spacing: 0.2px; }
-    .tagline { margin: 2px 0 0; color: var(--muted); font-size: 16px; }
-    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
-    .badge { background: var(--panel); border: 1px solid var(--ring); border-radius: 999px; padding: 6px 10px; font-size: 13px; color: var(--muted); }
-
-    .panel { background: var(--panel); border: 1px solid var(--ring); border-radius: 16px; padding: 20px; }
-    .grid { display: grid; gap: 16px; }
-    @media (min-width: 860px) { .grid-2 { grid-template-columns: 1.2fr 1fr; } }
-
-    h2 { font-size: 20px; margin: 24px 0 8px; }
-    h3 { font-size: 17px; margin: 20px 0 6px; }
-    p { margin: 10px 0; }
-    ul { margin: 8px 0 0 18px; }
-
-    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
-    .btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--ring); background: linear-gradient(180deg, #151821, #0f1117); }
-    .btn:hover { filter: brightness(1.05); text-decoration: none; }
-    .btn-primary { border-color: var(--highlight); color: var(--highlight); }
-
-    .muted { color: var(--muted); }
-    .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
-    .foot { color: var(--muted); font-size: 13px; margin-top: 28px; }
-
-    .key-claim { 
-      background: linear-gradient(135deg, rgba(147, 197, 253, 0.1), rgba(147, 197, 253, 0.05));
-      border-left: 3px solid var(--accent);
-      padding: 12px 16px;
-      margin: 20px 0;
-      border-radius: 8px;
-    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px 80px}
+    header{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    header img{width:120px;height:120px;object-fit:cover;border-radius:12px;border:1px solid var(--ring)}
+    h1{margin:0;font-size:26px}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block;padding:6px 10px;border:1px solid var(--ring);border-radius:999px;background:var(--panel);color:var(--muted);font-size:13px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap}
+    .panel{background:var(--panel);border:1px solid var(--ring);border-radius:16px;padding:18px}
+    .section-title{font-size:18px;margin:24px 0 8px}
+    .controls{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+    .control{padding:6px 10px;border:1px solid var(--ring);border-radius:8px;background:#0f1117;color:var(--text);font-size:14px}
+    .list{display:grid;gap:14px;margin-top:12px}
+    .item{background:linear-gradient(180deg,#12141b,#0f1117);border:1px solid var(--ring);border-radius:14px;padding:14px}
+    .item h3{margin:0 0 6px;font-size:18px}
+    .meta{font-size:13px;color:var(--muted)}
+    .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .btn{padding:8px 10px;border:1px solid var(--ring);border-radius:8px;background:#0f1117}
+    .btn.primary{border-color:var(--hi);color:var(--hi)}
+    .toggle{cursor:pointer}
+    details{margin-top:8px}
+    details > summary{cursor:pointer;color:var(--accent)}
+    pre{white-space:pre-wrap;background:#0e1116;border:1px solid var(--ring);padding:10px;border-radius:8px;overflow:auto}
+    footer{color:var(--muted);font-size:13px;margin-top:28px}
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rhoderick J. Beery III",
-    "jobTitle": "Student researcher",
-    "url": "https://thehereticalphysicist.com/",
-    "sameAs": [
-      "https://orcid.org/0000-0003-0182-5672",
-      "https://github.com/rjbeery/scripts"
-    ]
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
-    <div class="site-kicker">The Heretical Physicist</div>
-
-    <!-- Author header -->
-    <header class="author">
-      <!-- If your file lives at /headshot.jpg, keep src="headshot.jpg". If in /images/, change to images/headshot.jpg -->
-      <img src="headshot.jpg" alt="Rhoderick J. Beery III" class="headshot" loading="lazy" />
-      <div class="author-text">
-        <h1 class="title">Rhoderick J. Beery III</h1>
-        <p class="tagline">Proving Einstein's doubts about black holes were justified</p>
-        <div class="badges">
-          <a class="badge" href="https://www.unl.edu/" target="_blank" rel="noopener">University of Nebraska–Lincoln</a>
+    <header>
+      <img src="headshot.jpg" alt="Rhoderick J. Beery III headshot" loading="lazy" />
+      <div>
+        <h1>Rhoderick J. Beery III</h1>
+        <div class="muted">Publications & preprints. PDFs, DOIs, abstracts, and plain‑language summaries.</div>
+        <div class="badges" style="margin-top:8px">
           <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank" rel="noopener">ORCID</a>
           <a class="badge" href="https://github.com/rjbeery/scripts" target="_blank" rel="noopener">GitHub</a>
           <a class="badge" href="#contact">Contact</a>
@@ -116,103 +64,151 @@
       </div>
     </header>
 
-    <main class="grid grid-2" style="margin-top:24px;">
-      <section class="panel">
-        <div class="kicker">The Core Argument</div>
-        <h2>Nothing crosses the event horizon—ever</h2>
-
-        <p>
-          Einstein famously rejected black holes, arguing that gravitational collapse would freeze at the Schwarzschild radius. Modern physics dismisses this as naive, but my work shows Einstein had the right intuition for the wrong reasons.
-        </p>
-
-        <div class="key-claim">
-          <strong>The mathematical proof:</strong> Using relativistic coordinate transformations, I demonstrate that no physical signal or particle ever reaches the horizon in finite coordinate time—from any reference frame that maintains causal contact with the outside universe.
-        </div>
-
-        <p>
-          For evaporating black holes, the situation is even more stark: the horizon recedes faster than any infalling matter can approach it. The black hole evaporates completely before anything crosses. This isn't speculation—it's what the Vaidya metric explicitly tells us when we solve for infalling geodesics.
-        </p>
-
-        <p>
-          This resurrects the "frozen star" interpretation that dominated before the 1960s. The collapse is real, but completion is a mathematical artifact we can never observe or verify.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#papers">Read the papers (open access)</a>
-          <a class="btn" href="https://github.com/rjbeery/scripts" target="_blank" rel="noopener">Derivations & code</a>
-        </div>
-      </section>
-
-      <aside class="panel">
-        <div class="kicker">Why This Matters</div>
-
-        <h3>For theoretical physics:</h3>
-        <ul>
-          <li>Resolves the information paradox—nothing falls in, so nothing is lost</li>
-          <li>Eliminates singularities from physical reality</li>
-          <li>Reconciles general relativity with causality</li>
-        </ul>
-
-        <h3>Media-friendly angles:</h3>
-        <ul>
-          <li>"Einstein was right all along about black holes"</li>
-          <li>"Nebraska physicist challenges 60 years of consensus"</li>
-          <li>"Black holes might not be black—or holes"</li>
-        </ul>
-
-        <h3>The controversy:</h3>
-        <p class="muted">
-          These papers directly contradict standard textbook treatments. I show that the usual coordinate-free arguments for horizon crossing contain a subtle error: they assume completion of an infinite process in finite time.
-        </p>
-      </aside>
-    </main>
-
-    <section id="papers" style="margin-top:28px;" class="grid">
-      <div class="panel">
-        <h2>Published Research</h2>
-
-        <article>
-          <h3>The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon</h3>
-          <p class="muted"><em>Reports in Advances of Physical Sciences</em>, Vol. 9 (2025) • Peer-reviewed • Open Access</p>
-          <p>
-            Uses an inelastic rope thought experiment to prove that causal contact with matter approaching the horizon is permanently severed. The horizon represents a causal boundary that cannot be crossed, not merely a coordinate artifact.
-          </p>
-          <p><strong>Key result:</strong> The proper time to horizon crossing is finite, but the coordinate time is infinite in all frames maintaining external causality.</p>
-          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500136" target="_blank" rel="noopener">Read full paper →</a></p>
-        </article>
-
-        <hr style="border: none; border-top: 1px solid var(--ring); margin: 20px 0;" />
-
-        <article>
-          <h3>No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes</h3>
-          <p class="muted"><em>Reports in Advances of Physical Sciences</em>, Vol. 9 (2025) • Peer-reviewed • Open Access</p>
-          <p>
-            Solves the geodesic equations in the ingoing Vaidya metric to show that evaporating horizons always outrun infalling observers. The black hole disappears completely before anything can cross.
-          </p>
-          <p><strong>Key result:</strong> For any evaporation rate, the horizon recession velocity exceeds the infall velocity at all points outside the horizon.</p>
-          <p><a href="https://www.worldscientific.com/doi/10.1142/S2424942425500161" target="_blank" rel="noopener">Read full paper →</a></p>
-        </article>
+    <section class="panel" style="margin-top:20px">
+      <div class="section-title">Papers</div>
+      <div class="controls">
+        <select id="sort" class="control" aria-label="Sort papers">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="title">Title</option>
+        </select>
+        <input id="filter" class="control" placeholder="Filter by keyword…" aria-label="Filter papers" />
       </div>
+      <div id="list" class="list" aria-live="polite"></div>
     </section>
 
-    <section id="contact" style="margin-top:28px;" class="grid">
-      <div class="panel">
-        <h2>For Journalists & Researchers</h2>
-        <p>I'm available for interviews, podcasts, and academic discussions. Happy to provide simplified explanations, technical details, or debate the implications.</p>
-        <p>Email: <a href="mailto:rbeery4@huskers.unl.edu">rbeery4@huskers.unl.edu</a></p>
-        <p>Response time: Usually within 24 hours</p>
-        <div class="badges" style="margin-top: 12px;">
-          <a class="badge" href="https://orcid.org/0000-0003-0182-5672" target="_blank" rel="noopener">ORCID</a>
-          <a class="badge" href="https://github.com/rjbeery/scripts" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
+    <section id="contact" class="panel" style="margin-top:18px">
+      <div class="section-title">Contact</div>
+      <p>Email: <a href="mailto:rbeery4@huskers.unl.edu">rbeery4@huskers.unl.edu</a></p>
     </section>
 
-    <footer class="foot">
-      <p>© <span id="y"></span> Rhoderick J. Beery III | Lincoln, Nebraska | <a href="/privacy.html">Privacy</a></p>
+    <footer>
+      <p>© <span id="y"></span> Rhoderick J. Beery III • Lincoln, Nebraska</p>
     </footer>
   </div>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+  const PAPERS = [
+    {
+      title: "The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon",
+      venue: "Reports in Advances of Physical Sciences",
+      year: 2025,
+      status: "Published (peer‑reviewed)",
+      doi: "https://www.worldscientific.com/doi/10.1142/S2424942425500136",
+      pdf: "/papers/heretical-physicist.pdf", // optional local copy
+      code: "https://github.com/rjbeery/scripts",
+      abstract: "Uses an inelastic‑rope thought experiment in Schwarzschild spacetime to argue that causal contact with matter approaching the horizon is permanently severed from the exterior. The horizon functions as a null causal boundary rather than a permeable one‑way surface.",
+      lay: "If you lower a rope toward a black hole, there is no sequence of real operations that lets the rope’s end reach the horizon while the top stays in contact with you. The ‘finish line’ keeps receding in terms of outside time, so nothing actually crosses.",
+      bibtex: `@article{Beery2025Heresy,\n  author={Beery, Rhoderick J.},\n  title={The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon},\n  journal={Reports in Advances of Physical Sciences},\n  year={2025},\n  doi={10.1142/S2424942425500136}\n}`
+    },
+    {
+      title: "No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes",
+      venue: "Reports in Advances of Physical Sciences",
+      year: 2025,
+      status: "Published (peer‑reviewed)",
+      doi: "https://www.worldscientific.com/doi/10.1142/S2424942425500161",
+      pdf: "/papers/no-passing-zone-redux.pdf",
+      code: "https://github.com/rjbeery/scripts",
+      abstract: "Solves infalling trajectories in the ingoing Vaidya metric and shows that for evaporating black holes the horizon recedes faster than any infalling worldline can approach; the object never reaches the horizon before evaporation completes.",
+      lay: "When a black hole is shrinking, its boundary moves away faster than anything can catch it. By the time you’d ‘arrive,’ the hole is gone.",
+      bibtex: `@article{Beery2025NoPassing,\n  author={Beery, Rhoderick J.},\n  title={No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes},\n  journal={Reports in Advances of Physical Sciences},\n  year={2025},\n  doi={10.1142/S2424942425500161}\n}`
+    },
+    {
+      title: "True Weight of Light: Exact derivation of mass from confined electromagnetic energy",
+      venue: "Physical Review D (submitted)",
+      year: 2025,
+      status: "Under editorial consideration",
+      doi: "", // add when available
+      pdf: "/papers/true-weight-of-light.pdf",
+      abstract: "Derives rest‑mass equivalence for a bound electromagnetic configuration from time‑dilation/energy arguments, framing gravitational mass as an emergent property of confined field energy.",
+      lay: "A box of light behaves like it has weight. Treat the energy as confined and you can compute an exact, not hand‑wavy, mass.",
+      bibtex: `@unpublished{Beery2025TWL,\n  author={Beery, Rhoderick J.},\n  title={True Weight of Light: Exact derivation of mass from confined electromagnetic energy},\n  note={Submitted to Physical Review D},\n  year={2025}\n}`
+    },
+    {
+      title: "Mercury’s Mirror: The 6\u03c0 proof of time‑symmetric gravity",
+      venue: "Preprint",
+      year: 2025,
+      status: "Preprint",
+      doi: "", // Zenodo/DOI when assigned
+      pdf: "/papers/mercurys-mirror.pdf",
+      abstract: "Reproduces Mercury’s 43″/century perihelion advance using a flat‑spacetime, time‑symmetric (retarded+advanced) interaction model, attributing the 6\u03c0 factor to null‑contact geometry and radial–tangential coupling.",
+      lay: "You can explain Mercury’s extra orbit twist without curving spacetime by carefully accounting for how gravity communicates at light speed.",
+      bibtex: `@misc{Beery2025MM,\n  author={Beery, Rhoderick J.},\n  title={Mercury's Mirror: The 6pi proof of time-symmetric gravity},\n  howpublished={Preprint},\n  year={2025}\n}`
+    },
+    {
+      title: "No Dice, Niels: Deterministic quantum statistics from null‑shell causality",
+      venue: "Target: Foundations of Physics (in prep)",
+      year: 2025,
+      status: "Manuscript in preparation",
+      doi: "",
+      pdf: "/papers/no-dice-niels.pdf",
+      abstract: "Proposes a deterministic account of Born‑rule statistics and Bell correlations via phase‑matched null‑shell contact between emitters and absorbers, avoiding nonlocality while preserving empirical predictions.",
+      lay: "Quantum ‘randomness’ may come from how sources and detectors lock phases along light‑like connections, not from dice‑throwing by nature.",
+      bibtex: `@unpublished{Beery2025NDN,\n  author={Beery, Rhoderick J.},\n  title={No Dice, Niels: Deterministic quantum statistics from null-shell causality},\n  note={In preparation},\n  year={2025}\n}`
+    }
+  ];
+
+  const $ = (q, d=document)=>d.querySelector(q);
+  const list = $('#list');
+  const filter = $('#filter');
+  const sortSel = $('#sort');
+
+  function render(){
+    const q = filter.value.trim().toLowerCase();
+    const mode = sortSel.value;
+    const items = [...PAPERS]
+      .filter(p => !q || Object.values(p).join(' ').toLowerCase().includes(q))
+      .sort((a,b)=>{
+        if(mode==='title') return a.title.localeCompare(b.title);
+        if(mode==='oldest') return a.year - b.year;
+        return b.year - a.year; // newest
+      });
+
+    list.innerHTML = items.map(p => `
+      <article class="item" itemscope itemtype="https://schema.org/ScholarlyArticle">
+        <h3 itemprop="headline">${p.title}</h3>
+        <div class="meta">
+          <span itemprop="isPartOf">${p.venue}</span> • <span itemprop="datePublished">${p.year}</span>
+          ${p.status ? `• <span>${p.status}</span>`:''}
+        </div>
+        <div class="btns">
+          ${p.pdf ? `<a class="btn primary" href="${p.pdf}" itemprop="encoding" download>Download PDF</a>`:''}
+          ${p.doi ? `<a class="btn" href="${p.doi}" target="_blank" rel="noopener" itemprop="sameAs">DOI / Journal</a>`:''}
+          ${p.code ? `<a class="btn" href="${p.code}" target="_blank" rel="noopener">Code/Derivations</a>`:''}
+          <button class="btn" onclick="copyBib(this)" aria-label="Copy BibTeX">Copy BibTeX</button>
+        </div>
+        ${p.abstract ? `<details><summary>Abstract</summary><p itemprop="abstract">${p.abstract}</p></details>`:''}
+        ${p.lay ? `<details><summary>Lay summary</summary><p>${p.lay}</p></details>`:''}
+        ${p.bibtex ? `<pre class="bib" hidden>${p.bibtex}</pre>`:''}
+      </article>
+    `).join('');
+  }
+
+  function copyBib(btn){
+    const pre = btn.closest('.item').querySelector('.bib');
+    if(!pre) return;
+    navigator.clipboard.writeText(pre.textContent).then(()=>{
+      btn.textContent = 'Copied';
+      setTimeout(()=>btn.textContent='Copy BibTeX',1200);
+    });
+  }
+
+  filter.addEventListener('input', render);
+  sortSel.addEventListener('change', render);
+  render();
+  document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Structured data: ItemList of ScholarlyArticle -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"item":{"@type":"ScholarlyArticle","headline":"The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon","isPartOf":"Reports in Advances of Physical Sciences","datePublished":"2025","url":"https://www.worldscientific.com/doi/10.1142/S2424942425500136"}},
+      {"@type":"ListItem","position":2,"item":{"@type":"ScholarlyArticle","headline":"No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes","isPartOf":"Reports in Advances of Physical Sciences","datePublished":"2025","url":"https://www.worldscientific.com/doi/10.1142/S2424942425500161"}}
+    ]
+  }
+  </script>
 </body>
 </html>
