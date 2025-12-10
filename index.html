@@ -39,6 +39,7 @@
     .item{background:linear-gradient(180deg,#12141b,#0f1117);border:1px solid var(--ring);border-radius:14px;padding:14px}
     .item h3{margin:0 0 6px;font-size:18px}
     .meta{font-size:13px;color:var(--muted)}
+      .status-highlight{color:var(--hi);font-weight:bold}
     .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
     .btn{padding:8px 10px;border:1px solid var(--ring);border-radius:8px;background:#0f1117}
     .btn.primary{border-color:var(--hi);color:var(--hi)}
@@ -88,11 +89,11 @@
   </div>
 
   <script>
-  const PAPERS = [
-      {
-        title: "The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon",
-        year: 2025,
-        status: "Published in Reports in Advances of Physical Sciences 2025",
+    const PAPERS = [
+    {
+      title: "The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon",
+      year: 2025,
+      status: "Published in Reports in Advances of Physical Sciences 2025",
       doi: "https://www.worldscientific.com/doi/10.1142/S2424942425500136",
       pdf: "/papers/heretical-physicist.pdf", // optional local copy
       code: "https://github.com/rjbeery/scripts",
@@ -101,7 +102,13 @@
       erratum: {
         pdf: "/papers/errata/Errata for The Heretical Physicist.pdf"
       },
-      bibtex: `@article{Beery2025Heresy,\n  author={Beery, Rhoderick J.},\n  title={The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon},\n  journal={Reports in Advances of Physical Sciences},\n  year={2025},\n  doi={10.1142/S2424942425500136}\n}`
+      bibtex: `@article{Beery2025Heresy,
+  author={Beery, Rhoderick J.},
+  title={The Heretical Physicist: Revisiting Einstein's Objection to the Event Horizon},
+  journal={Reports in Advances of Physical Sciences},
+  year={2025},
+  doi={10.1142/S2424942425500136}
+}`
     },
     {
       title: "No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes",
@@ -115,7 +122,13 @@
       erratum: {
         pdf: "/papers/errata/Erratum for No Passing Zone (redux).pdf"
       },
-      bibtex: `@article{Beery2025NoPassing,\n  author={Beery, Rhoderick J.},\n  title={No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes},\n  journal={Reports in Advances of Physical Sciences},\n  year={2025},\n  doi={10.1142/S2424942425500161}\n}`
+      bibtex: `@article{Beery2025NoPassing,
+  author={Beery, Rhoderick J.},
+  title={No Passing Zone (Redux): Horizon Chasing in Evaporating Black Holes},
+  journal={Reports in Advances of Physical Sciences},
+  year={2025},
+  doi={10.1142/S2424942425500161}
+}`
     },
     {
       title: "The True Weight of Light: Exact Derivation of Mass From Confined Electromagnetic Energy",
@@ -123,41 +136,78 @@
       status: "Under Review at Physical Review D",
       doi: "", // add when available
       pdf: "/papers/true-weight-of-light.pdf",
-      abstract: "We demonstrate that gravitational mass emerges as the reactive force experienced by confined electromagnetic energy in a gravitational potential. Analyzing a single photon confined between two perfect mirrors at fixed Schwarzschild radii, we derive the exact asymmetric momentum transfer arising from gravitational redshift. Without invoking weak-field approximations, we show that a standing wave with total energy E experiences, as measured by a stationary observer, a net downward force exactly equal to (E/c²)gₑff, where gₑff depends on the local spacetime geometry. For a photon with Killing energy ℏωₖ = mₑc² confined at the Compton scale, the system exhibits gravitational behavior identical to an electron at rest. We further demonstrate that inertial mass emerges identically from Doppler-shifted momentum transfer during acceleration in flat spacetime, establishing that both gravitational and inertial mass arise from the same geometric principle and explaining the equivalence principle as an inevitable consequence rather than an empirical mystery. This result suggests that gravitational mass is not a fundamental property but an emergent consequence of energy confinement in curved spacetime, with implications for the interpretation of the equivalence principle and the nature of mass itself.",
-      lay: "A box of light behaves like it has weight. Treat the energy as confined and you can compute an exact, not hand‑wavy, mass.",
-      bibtex: `@unpublished{Beery2025TWL,\n  author={Beery, Rhoderick J.},\n  title={True Weight of Light: Exact Derivation of Mass From Confined Electromagnetic Energy},\n  note={Submitted to Physical Review D},\n  year={2025}\n}`
+      abstract: "We demonstrate that gravitational mass emerges as the reactive force experienced by confined electromagnetic energy in a gravitational potential. Analyzing a single photon confined between two perfect mirrors at fixed Schwarzschild radii, we derive the exact asymmetric momentum transfer arising from gravitational redshift. Without invoking weak-field approximations, we show that a standing wave with total energy E experiences, as measured by a stationary observer, a net downward force exactly equal to (E/c²)g_eff. We further demonstrate that inertial mass emerges identically from Doppler-shifted momentum transfer during acceleration in flat spacetime, establishing that both gravitational and inertial mass arise from the same geometric principle. This result suggests that gravitational mass is not a fundamental property but an emergent consequence of energy confinement in curved spacetime.",
+      lay: "A box of light behaves like it has weight. Treat the energy as confined and you can compute an exact, not hand-wavy, mass.",
+      bibtex: `@unpublished{Beery2025TWL,
+  author={Beery, Rhoderick J.},
+  title={The True Weight of Light: Exact Derivation of Mass From Confined Electromagnetic Energy},
+  note={Submitted to Physical Review D},
+  year={2025}
+}`
     },
     {
       title: "Mercury's Mirror: Time-Symmetric Flat-Spacetime Derivations of 1PN Perihelion Precession and Light Deflection",
       year: 2025,
-      status: "Published in Physical Journal Plus 2025",
-      doi: "", // Zenodo/DOI when assigned
+      status: "Published in European Physical Journal Plus 2025",
+      doi: "", // DOI when assigned
       pdf: "/papers/mercurys-mirror.pdf",
-      abstract: "We give explicit, time-symmetric, flat-spacetime derivations of two classic weak-field tests: Mercury's perihelion advance and the Sun's light deflection. Starting from a Fokker-type direct-interaction action with a retarded+advanced null kernel, a near-zone expansion to O(v²/c²) yields a gravitational Darwin-type Lagrangian. In the M ≫ m limit the resulting Euler–Lagrange equations reduce to a Binet equation with the decisive coefficient 3, giving Δϖ = 6πGM/[a(1−e²)c²]. For light, we compute the transverse momentum impulse at the two null-connected endpoints (emitter and absorber). Each endpoint contributes δθ_endpoint = 2GM/(bc²); the total deflection is δ = 4GM/(bc²). All intermediate steps are shown: light-cone delta resolution, Jacobians, cancellation of O(v/c) terms, construction of the quadratic velocity functional Q, the Binet reduction, and the endpoint impulse integral for light. Historically, Hoyle–Narlikar (1964) argued that a time-symmetric direct-interaction theory should reproduce GR's weak-field phenomenology but did not publish explicit action→observable derivations for Mercury or light bending. This paper supplies those calculations, motivated by renewed interest in direct-interaction approaches and by the author's Einstein's Big Toe (EBT) program.",
-      lay: "You can explain Mercury’s extra orbit twist without curving spacetime by carefully accounting for how gravity communicates at light speed.",
-      bibtex: `@misc{Beery2025MM,\n  author={Beery, Rhoderick J.},\n  title={Mercury's Mirror: Time-Symmetric Flat-Spacetime Derivations of 1PN Perihelion Precession and Light Deflection},\n  howpublished={Preprint},\n  year={2025}\n}`
+      abstract: "We give explicit, time-symmetric, flat-spacetime derivations of two classic weak-field tests: Mercury's perihelion advance and the Sun's light deflection. Starting from a Fokker-type direct-interaction action with a retarded+advanced null kernel, a near-zone expansion to O(v²/c²) yields a gravitational Darwin-type Lagrangian. In the M ≫ m limit the resulting Euler–Lagrange equations reduce to a Binet equation with the decisive coefficient 3, giving Δϖ = 6πGM/[a(1−e²)c²]. For light, we compute the transverse momentum impulse at the two null-connected endpoints (emitter and absorber). Each endpoint contributes δθ_endpoint = 2GM/(bc²); the total deflection is δ = 4GM/(bc²). All intermediate steps are shown: light-cone delta resolution, Jacobians, cancellation of O(v/c) terms, construction of the quadratic velocity functional Q, the Binet reduction, and the endpoint impulse integral for light. This paper supplies fully explicit action→observable derivations for these tests within a time-symmetric direct-interaction framework.",
+      lay: "You can explain Mercury’s extra orbit twist and light bending without curving spacetime by carefully accounting for how gravity communicates at light speed.",
+      bibtex: `@misc{Beery2025MM,
+  author={Beery, Rhoderick J.},
+  title={Mercury's Mirror: Time-Symmetric Flat-Spacetime Derivations of 1PN Perihelion Precession and Light Deflection},
+  howpublished={Preprint},
+  year={2025}
+}`
     },
     {
-      title: "No Dice, Niels: Deterministic Quantum Statistics From Null‑Shell Causality",
+      title: "No Dice, Niels: Deterministic Quantum Statistics From Null-Shell Causality",
       year: 2025,
-      status: "DESK REJECTED at Foundations of Physics; Submitted to Entropy",
+      status: "Desk rejected at Foundations of Physics; Submitted to Entropy",
       doi: "",
       pdf: "/papers/no-dice-niels.pdf",
-      abstract: "\"God does not play dice,\" Einstein objected to quantum indeterminacy. This paper examines how quantum probability may emerge from deterministic, time-symmetric causal processes. Within the null-shell causality framework of Einstein's Big Toe, the Born rule is shown to follow geometrically once amplitude squaring is assumed: two-boundary null-contact structure fixes the cos² detection law with no adjustable parameters. Introducing a natural symmetry threshold at T_crit = 0.5 converts the continuous coupling into discrete yes/no outcomes, providing a fully deterministic version of the theory. Bell correlations arise from boundary-conditioned phase selection where both retarded (past) and advanced (future) null contacts participate. The model is retrocausal in a kinematic sense—future settings constrain which past emissions complete—but it preserves locality and no-signaling. Apparent randomness reflects epistemic ignorance of absorber boundary conditions rather than ontological chance.",
-      lay: "Quantum ‘randomness’ may come from how sources and detectors lock phases along light‑like connections, not from dice‑throwing by nature.",
-      bibtex: `@unpublished{Beery2025NDN,\n  author={Beery, Rhoderick J.},\n  title={No Dice, Niels: Deterministic Quantum Statistics From Null-Shell Causality},\n  note={In preparation},\n  year={2025}\n}`
-    }
-    ,{
+      abstract: "\"God does not play dice,\" Einstein objected to quantum indeterminacy. This paper examines how quantum probability may emerge from deterministic, time-symmetric causal processes. Within the null-shell causality framework of Einstein's Big Toe, the Born rule is shown to follow geometrically once amplitude squaring is assumed: two-boundary null-contact structure fixes the cos² detection law with no adjustable parameters. Introducing a natural symmetry threshold at T_crit = 0.5 converts the continuous coupling into discrete yes/no outcomes, providing a fully deterministic version of the theory. Bell correlations arise from boundary-conditioned phase selection where both retarded (past) and advanced (future) null contacts participate. Apparent randomness reflects epistemic ignorance of absorber boundary conditions rather than ontological chance.",
+      lay: "Quantum ‘randomness’ may come from how sources and detectors lock phases along light-like connections, not from dice-throwing by nature.",
+      bibtex: `@unpublished{Beery2025NDN,
+  author={Beery, Rhoderick J.},
+  title={No Dice, Niels: Deterministic Quantum Statistics From Null-Shell Causality},
+  note={Submitted to Entropy},
+  year={2025}
+}`
+    },
+    {
+      title: "Directional Causality and the Occlusion Principle: A Null-Shell Framework for Electromagnetic and Gravitational Interaction Strength",
+      year: 2025,
+      status: "Submitted to European Physical Journal Plus 2025",
+      doi: "", // DOI when assigned
+      pdf: "/papers/occlusion-principle.pdf",
+      abstract: "This paper develops the occlusion principle: interaction strengths in electromagnetic and gravitational systems are governed not by local field amplitudes but by the availability of null directions through which particles can make causal contact. Because superposition erases directional information, a configuration with zero net field can still be maximally saturated with null rays from surrounding matter. In such environments the differential availability of null directions between two particles is suppressed, weakening or eliminating their effective coupling. We show how this framework unifies Debye screening, Pauli blocking, tight photon–baryon coupling, and density–acceleration correlations in galaxies. The uniformly charged or massive shell and Olbers-type mass distributions become clean diagnostics where field-based and directional-causality descriptions make distinct, falsifiable predictions.",
+      lay: "Fields can cancel to zero while every direction is still ‘busy’ with causal influence. This paper argues that what really sets the strength of gravity and electromagnetism is how many clean lightlike directions are left open between particles—and uses that to explain screening, radiation reaction, and dark-matter-like galaxy behavior without changing Maxwell or Newton.",
+      bibtex: `@unpublished{Beery2025Occlusion,
+  author={Beery, Rhoderick J.},
+  title={Directional Causality and the Occlusion Principle: A Null-Shell Framework for Electromagnetic and Gravitational Interaction Strength},
+  note={Submitted to Eur. Phys. J. Plus},
+  year={2025}
+}`
+    },
+    {
       title: "Einstein's Big Toe",
       year: 2025,
       status: "Preprint on Zenodo",
       doi: "https://doi.org/10.5281/zenodo.15867925",
       pdf: "https://zenodo.org/records/17555049/files/Einstein%27s%20Big%20Toe.pdf?download=1",
-      abstract: "Einstein's Big Toe proposes that gravitational and electromagnetic interactions arise from direct particle-to-particle contact along null-separated worldline intervals rather than from fields propagating on a curved manifold. This paper establishes the conceptual vocabulary and core principles of the null-shell causality framework. We present a time-symmetric Fokker-type action in which forces emerge from the geometry and density of null contact between worldlines. We outline how this structure recovers Newtonian gravity, radiation reaction, and weak-field relativistic effects without invoking spacetime curvature. The fleshing out of its consequences represents a large and ongoing body of work: several companion papers exist, others have been published, and additional developments are in progress. Accordingly, this paper provides stable definitions and placeholders for key ideas; detailed derivations and citations will continue to be expanded as the research program matures. What general relativity attributes to curved geometry, EBT attributes to gradients in causal accessibility—a distinction with empirical consequences at strong field.",
-      lay: "Gravitation and electromagnetism may emerge from direct null worldline contacts instead of curved spacetime; this paper sets the vocabulary and framework.",
-      bibtex: `@misc{Beery2025EBT,\n  author={Beery, Rhoderick J.},\n  title={Einstein's Big Toe},\n  publisher={Zenodo},\n  year={2025},\n  doi={10.5281/zenodo.15867925}\n}`
+      abstract: "Einstein's Big Toe proposes that gravitational and electromagnetic interactions arise from direct particle-to-particle contact along null-separated worldline intervals rather than from fields propagating on a curved manifold. This paper establishes the conceptual vocabulary and core principles of the null-shell causality framework. We present a time-symmetric Fokker-type action in which forces emerge from the geometry and density of null contact between worldlines. We outline how this structure recovers Newtonian gravity, radiation reaction, and weak-field relativistic effects without invoking spacetime curvature. The fleshing out of its consequences represents a large and ongoing body of work: several companion papers exist, others have been published, and additional developments are in progress.",
+      lay: "Gravitation and electromagnetism may emerge from direct null worldline contacts instead of curved spacetime; this paper sets the vocabulary and framework for that program.",
+      bibtex: `@misc{Beery2025EBT,
+  author={Beery, Rhoderick J.},
+  title={Einstein's Big Toe},
+  publisher={Zenodo},
+  year={2025},
+  doi={10.5281/zenodo.15867925}
+}`
     }
   ];
+
 
   const $ = (q, d=document)=>d.querySelector(q);
   const list = $('#list');
@@ -175,24 +225,27 @@
         return b.year - a.year; // newest
       });
 
-    list.innerHTML = items.map(p => `
-      <article class="item" itemscope itemtype="https://schema.org/ScholarlyArticle">
-        <h3 itemprop="headline">${p.title}</h3>
-        <div class="meta">
-          ${p.status ? `Status: ${p.status}`:''}
-        </div>
-        <div class="btns">
-          ${p.pdf ? `<a class="btn primary" href="${p.pdf}" itemprop="encoding" download>Download PDF</a>`:''}
-          ${p.erratum?.pdf ? `<a class="btn" href="${p.erratum.pdf}" download>Download Erratum PDF</a>` : ''}
-          ${p.doi ? `<a class="btn" href="${p.doi}" target="_blank" rel="noopener" itemprop="sameAs">DOI / Journal</a>`:''}
-          ${p.code ? `<a class="btn" href="${p.code}" target="_blank" rel="noopener">Code/Derivations</a>`:''}
-          <button class="btn" onclick="copyBib(this)" aria-label="Copy BibTeX">Copy BibTeX</button>
-        </div>
-        ${p.abstract ? `<details><summary>Abstract</summary><p itemprop="abstract">${p.abstract}</p></details>`:''}
-        ${p.lay ? `<details><summary>Lay summary</summary><p>${p.lay}</p></details>`:''}
-        ${p.bibtex ? `<pre class="bib" hidden>${p.bibtex}</pre>`:''}
-      </article>
-    `).join('');
+      list.innerHTML = items.map(p => {
+        const statusHighlight = p.status && p.status.toLowerCase().includes('published');
+        return `
+        <article class="item" itemscope itemtype="https://schema.org/ScholarlyArticle">
+          <h3 itemprop="headline">${p.title}</h3>
+          <div class="meta">
+            ${p.status ? `<span class="${statusHighlight ? 'status-highlight' : ''}">Status: ${p.status}</span>` : ''}
+          </div>
+          <div class="btns">
+            ${p.pdf ? `<a class="btn primary" href="${p.pdf}" itemprop="encoding" download>Download PDF</a>`:''}
+            ${p.erratum?.pdf ? `<a class="btn" href="${p.erratum.pdf}" download>Download Erratum PDF</a>` : ''}
+            ${p.doi ? `<a class="btn" href="${p.doi}" target="_blank" rel="noopener" itemprop="sameAs">DOI / Journal</a>`:''}
+            ${p.code ? `<a class="btn" href="${p.code}" target="_blank" rel="noopener">Code/Derivations</a>`:''}
+            <button class="btn" onclick="copyBib(this)" aria-label="Copy BibTeX">Copy BibTeX</button>
+          </div>
+          ${p.abstract ? `<details><summary>Abstract</summary><p itemprop="abstract">${p.abstract}</p></details>`:''}
+          ${p.lay ? `<details><summary>Lay summary</summary><p>${p.lay}</p></details>`:''}
+          ${p.bibtex ? `<pre class="bib" hidden>${p.bibtex}</pre>`:''}
+        </article>
+      `;
+      }).join('');
   }
 
   function copyBib(btn){
